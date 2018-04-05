@@ -5,7 +5,7 @@ public class Developer {
     private String lastName;
     private long id;
     private int age;
-    private Sex sex;
+    private String sex;
     private int idCompany;
     private int salary;
 
@@ -37,15 +37,28 @@ public class Developer {
         return age;
     }
 
+    @Override
+    public String toString() {
+        return "Developer{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", id=" + id +
+                ", age=" + age +
+                ", sex=" + sex +
+                ", idCompany=" + idCompany +
+                ", salary=" + salary +
+                '}';
+    }
+
     public void setAge(int age) {
         this.age = age;
     }
 
-    public Sex getSex() {
+    public String getSex() {
         return sex;
     }
 
-    public void setSex(Sex sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 
