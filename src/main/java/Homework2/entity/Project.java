@@ -46,4 +46,12 @@ public class Project {
     public void setIdCustomer(int idCustomer) {
         this.idCustomer = idCustomer;
     }
+
+    @Override
+    public String toString() {
+        return "Project{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
